@@ -6,7 +6,7 @@ const DashboardPage = () => {
     const { token } = useContext(AppContext); // Access the token from the context
 
     useEffect(() => {
-        fetch("/api/dashboard", {
+        fetch("https://crm-app-backend-4iyu.onrender.com/api/dashboard", {
             headers: {
                 Authorization: `Bearer ${token}`,
             },
