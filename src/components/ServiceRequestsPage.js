@@ -7,7 +7,7 @@ const ServerRequestsPage = () => {
 
     useEffect(() => {
         // Fetch server requests data from the backend API
-        fetch("/api/server-requests", {
+        fetch("https://crm-app-backend-4iyu.onrender.com/api/server-requests", {
             headers: {
                 Authorization: `Bearer ${token}`,
             },
@@ -19,7 +19,7 @@ const ServerRequestsPage = () => {
 
     const handleAddServerRequest = () => {
         // Make an API request to add a new server request
-        fetch("/api/server-requests", {
+        fetch("https://crm-app-backend-4iyu.onrender.com/api/server-requests", {
             method: "POST",
             headers: {
                 Authorization: `Bearer ${token}`,
@@ -37,7 +37,7 @@ const ServerRequestsPage = () => {
 
     const handleRemoveServerRequest = (id) => {
         // Make an API request to remove a server request
-        fetch(`/api/server-requests/${id}`, {
+        fetch(`https://crm-app-backend-4iyu.onrender.com/api/server-requests/${id}`, {
             method: "DELETE",
             headers: {
                 Authorization: `Bearer ${token}`,
