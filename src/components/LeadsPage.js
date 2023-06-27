@@ -7,7 +7,7 @@ const ContactsPage = () => {
 
     useEffect(() => {
         // Fetch contacts data from the backend API
-        fetch("/api/contacts", {
+        fetch("https://crm-app-backend-4iyu.onrender.com/api/contacts", {
             headers: {
                 Authorization: `Bearer ${token}`,
             },
@@ -19,7 +19,7 @@ const ContactsPage = () => {
 
     const handleAddContact = () => {
         // Make an API request to add a new contact
-        fetch("/api/contacts", {
+        fetch("https://crm-app-backend-4iyu.onrender.com/api/contacts", {
             method: "POST",
             headers: {
                 Authorization: `Bearer ${token}`,
@@ -37,7 +37,7 @@ const ContactsPage = () => {
 
     const handleRemoveContact = (id) => {
         // Make an API request to remove a contact
-        fetch(`/api/contacts/${id}`, {
+        fetch(`https://crm-app-backend-4iyu.onrender.com/api/contacts/${id}`, {
             method: "DELETE",
             headers: {
                 Authorization: `Bearer ${token}`,
@@ -59,7 +59,7 @@ const ContactsPage = () => {
 
     const handleEditContact = (id, newName) => {
         // Make an API request to edit a contact
-        fetch(`/api/contacts/${id}`, {
+        fetch(`https://crm-app-backend-4iyu.onrender.com/api/contacts/${id}`, {
             method: "PUT",
             headers: {
                 Authorization: `Bearer ${token}`,
