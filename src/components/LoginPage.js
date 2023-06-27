@@ -11,7 +11,7 @@ const LoginPage = () => {
 
         try {
             // Send login request to the backend
-            const response = await fetch("/api/login", {
+            const response = await fetch("https://crm-app-backend-4iyu.onrender.com/api/login", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
