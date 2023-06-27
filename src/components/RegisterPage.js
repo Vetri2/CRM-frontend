@@ -11,7 +11,7 @@ const RegisterPage = () => {
         e.preventDefault();
 
         try {
-            const response = await fetch("/api/register", {
+            const response = await fetch("https://crm-app-backend-4iyu.onrender.com/api/register", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
