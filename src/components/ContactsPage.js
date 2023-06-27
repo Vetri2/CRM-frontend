@@ -5,7 +5,7 @@ const ContactsPage = () => {
 
     useEffect(() => {
         // Fetch contacts data from the backend API
-        fetch("/api/contacts")
+        fetch("https://crm-app-backend-4iyu.onrender.com/api/contacts")
             .then((response) => response.json())
             .then((data) => setContacts(data))
             .catch((error) => console.error(error));
