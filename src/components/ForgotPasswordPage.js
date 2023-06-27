@@ -7,7 +7,7 @@ const ForgotPasswordPage = () => {
         e.preventDefault();
 
         try {
-            const response = await fetch("/api/forgot-password", {
+            const response = await fetch("https://crm-app-backend-4iyu.onrender.com/api/forgot-password", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
